@@ -1,0 +1,28 @@
+.thinkTrable-step1 { width: 61.875rem; height: 62.5rem; background: url(../images/thinkTrableStep1Bg.png) 0 0 no-repeat;}
+.thinkTrable-step1 .title { width: 100%; padding-top: 10rem; font-weight: 900; font-size: 3rem; text-align: center; color: black;letter-spacing: -0.125rem;}
+.thinkTrable-step1 .subTitle { text-align: center; font-weight: 550; font-size: 1.5rem;}
+.thinkTrable-step1 .content-area { padding: 5.6rem 0 0 10.5rem;}
+.thinkTrable-step1 .content { padding: 0 0 1.6rem 0; text-align: left; font-size: 1.2rem;}
+.thinkTrable-step1 .bottom { width: 100%; height: 25%; margin-top: 17%;}
+.thinkTrable-step1 .bottom .left { width: 75%; height: 100%; display: inline-block; padding-left: 14rem; margin-top: 2%;float: left;}
+.thinkTrable-step1 .bottom .content{ letter-spacing: -0.1rem; padding: 0 0 1.6rem 0; text-align: left; font-size: 1.15rem; font-weight: 400;}
+.thinkTrable-step1 .bottom .right { width: 24%; height: 100%; display: inline-block; text-align: left;}
+
+.thinkTrable-step2 { width: 61.875rem; height: 104.375rem; background: url(../images/tinkiTrableStep2Bg.png) 0 0 no-repeat;}
+.thinkTrable-step2 .content-top { height: 11.8rem;}
+.thinkTrable-step2 .content-top .left { width: 78%; display: inline-block; float: left;}
+.thinkTrable-step2 .content-top .left .title { width: 100%; padding: 2.8rem 0 0 6.4rem; font-weight: 800; font-size: 2.5rem; text-align: left; color: black;}
+.thinkTrable-step2 .content-top .left .subTitle { padding: 1rem 0 0 3rem; font-weight: 600; font-size: 1.2rem;}
+.thinkTrable-step2 .content-top .right { display: inline-block; text-align: left;}
+.thinkTrable-step2 .content-top .right .allSeeSub { padding: 2.5rem 0 0 1rem;}
+.thinkTrable-step2 .content-top .right .allSeeBtn { padding: 0.5rem; cursor: pointer;}
+.thinkTrable-step2 .content { padding-top: 7rem;}
+.thinkTrable-step2 .content .content-row { height: 13.5rem; padding-left: 2.5rem;}
+.thinkTrable-step2 .content .contentSub { display: inline-block; width: 6.6rem; height: 6.7rem; margin-left: 2.3rem; vertical-align: top; cursor: pointer;}
+.thinkTrable-step2 .content .contentSub p { text-align: center; font-size: 1.1rem; font-weight: 600; line-height: 1.3rem; color: white;}
+.thinkTrable-step2 .detail { width: 51.2rem; height: 48.2rem; margin: 4.6rem 5.3rem; border: 0.125rem solid #95937c;}
+
+.ptdot6 {padding-top: 0.6rem;}
+.pt1dot4 {padding-top: 1.4rem;}
+.pt2 {padding-top: 2rem;}
+

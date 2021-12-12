@@ -1,0 +1,58 @@
+var language;
+
+//function loadLanguage() {
+//    var lng = localStorage.getItem('language');
+//    console.log('loadLanguage : ' + lng)
+//    if(lng == null){
+//        lng = document.getElementById("langSelector").value;
+//    } else {
+//        document.getElementById("langSelector").value = lng;
+//    }
+//    setLanguage(lng);
+//    changeLanguage();
+//}
+
+function loadLanguageIfNotLoaded(){
+    var lang = localStorage.getItem('language');
+    if(language === undefined || lang == null){
+        loadLanguage();
+    }
+}
+
+function loadLanguage() {
+    var lang = localStorage.getItem('language');
+    console.log('loadLanguage : ' + lang)
+    if(lang == null){
+        selectLanguage($('.active').children().first());
+    } else {
+         selectLanguage($('.country[value=' + lang + ']')[0]);
+    }
+}
+
+
+function selectLanguage(selectedLanguage){
+    //
+    $(selectedLanguage).parent().addClass('active').siblings().removeClass('active');
+    setLanguage($(selectedLanguage).val());
+    changeLanguage();
+
+    // *
+    if ($(selectedLanguage).val() == 'ko') {
+        $('#divDeliveryMethod').children().show();
+    } else {
+        $('#divDeliveryMethod').children().hide();
+        $('#email').prop('checked', true);
+    }
+}
+
+function setLanguage(lang) {
+     localStorage.setItem('language', lang);
+    $.ajax({
+        url:  uriPrefix + '/public/language/' +  localStorage.getItem('language') + '.json',
+        dataType: 'json', async: false, dataType: 'json',
+        success: function (lang) { language = lang },
+        error : function (err) {
+            console.log(err)
+        }
+    });
+}
